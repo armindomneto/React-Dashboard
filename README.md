@@ -30,5 +30,12 @@ Não há banco de dados. Os dados são carregados de 2 arquivos que contém arra
 
 
 <div align="center">
-  <small>Rodrigo Gonçalves Santana - 2020</small>
+  <small>Instrutor: Rodrigo Gonçalves Santana - 2020</small>
 </div>
+
+<div align="center">
+  <small>Armindo Malafaia Neto - 2021</small>
+</div>
+
+- [x] Link do [**Certificado**](https://www.udemy.com/certificate/UC-3b151adf-5141-437e-b5fb-330ac8db84c0/).
+
