@@ -23,7 +23,7 @@ const SignIn: React.FC = () => {
 
       <Form onSubmit={() => signIn(email, password)}>
         <FormTitle>Entrar</FormTitle>
-        <Input type="email" required placeholder='e=mail'onChange={(e) => setEmail(e.target.value)}/>
+        <Input type="email" required placeholder='e-mail'onChange={(e) => setEmail(e.target.value)}/>
         <Input type="password" required placeholder='senha'onChange={(e) => setPassword(e.target.value)}/>
         <Button type="submit">Acessar</Button>
 

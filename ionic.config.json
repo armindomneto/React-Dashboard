@@ -1,0 +1,7 @@
+{
+  "name": "minha-carteira",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

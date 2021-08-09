@@ -1,0 +1,2 @@
+Cls
+ionic serve --external

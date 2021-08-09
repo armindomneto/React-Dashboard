@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback } from "react";
+import React, { useMemo, useState, useCallback, Suspense } from "react";
 
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
@@ -6,7 +6,8 @@ import WalletBox from "../../components/WalletBox";
 import MessageBox from "../../components/MessageBox";
 import PieChartBox from "../../components/PieChartBox";
 import HistoryBox from "../../components/HistoryBox";
-import BarChartBox from "../../components/BarChartBox";
+//import BarChartBox from "../../components/BarChartBox";
+
 
 import expenses from "../../repositories/expenses";
 import gains from "../../repositories/gains";
@@ -16,6 +17,13 @@ import { Container, Content } from "./styles";
 import happyImg from "../../assets/happy.svg";
 import sadImg from "../../assets/sad.svg";
 import grinningImg from "../../assets/grinning.svg";
+
+
+// const WalletBox = React.lazy(() => import("../../components/WalletBox"));
+// const MessageBox = React.lazy(() => import("../../components/MessageBox"));
+// const PieChartBox = React.lazy(() => import("../../components/PieChartBox"));
+// const HistoryBox = React.lazy(() => import("../../components/HistoryBox"));
+const BarChartBox = React.lazy(() => import('../../components/BarChartBox'));
 
 const Dashboard: React.FC = () => {
   const [monthSelected, setMonthSelected] = useState<number>(
@@ -289,7 +297,7 @@ const Dashboard: React.FC = () => {
     } catch (error) {
       throw new Error("invalid month value. Is accept 0 - 24.");
     }
-  },[]);
+  }, []);
 
   const handleYearSelected = useCallback((year: string) => {
     try {
@@ -298,7 +306,7 @@ const Dashboard: React.FC = () => {
     } catch (error) {
       throw new Error("invalid year value. Is accept integer numbers.");
     }
-  },[]);
+  }, []);
 
   return (
     <Container>
@@ -352,15 +360,17 @@ const Dashboard: React.FC = () => {
           lineColorAmountOutput="#E44C4E"
         />
 
-        <BarChartBox
-          title="Saidas"
-          data={relationExpensesRecurrntVersusEventual}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <BarChartBox
+            title="Saidas"
+            data={relationExpensesRecurrntVersusEventual}
+          />
 
-        <BarChartBox
-          title="Entradas"
-          data={relationGainsRecurrntVersusEventual}
-        />
+          <BarChartBox
+            title="Entradas"
+            data={relationGainsRecurrntVersusEventual}
+          />
+        </Suspense>
       </Content>
     </Container>
   );
