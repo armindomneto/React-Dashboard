@@ -3,7 +3,7 @@
 </div>
 
 
-Dashboard desenvolvido em **ReactJs** com **TypeScript** inteiramente componentizado com **componentes puros**.
+Dashboard developed in **ReactJs** with **TypeScript** fully componentized with **pure components**.
 
 <div align="center" >
   <img src="./docs/assets/minhacarteirapreview.gif">
@@ -12,30 +12,34 @@ Dashboard desenvolvido em **ReactJs** com **TypeScript** inteiramente componenti
 
 
 
-Não há banco de dados. Os dados são carregados de 2 arquivos que contém arrays simulando os repositórios de dados.
+There is no database. Data is loaded from 2 files containing arrays simulating the data stores.
 
-
-### Layout & Componentes Responsivos
+### Layout and Responsive Components
 
 <div align="center" >
   <img src="./docs/assets/resposiveview.png">
 </div>
 
-- [x] Link do prototipo desenvolvido no [**Figma**](https://www.figma.com/file/nOGmUkhcINJt6nd57R4ENu/Untitled?node-id=0%3A1).
+- [x] Link to the prototype developed in [**Figma**](https://www.figma.com/file/nOGmUkhcINJt6nd57R4ENu/Untitled?node-id=0%3A1).
 
-### Layout & Componentes Responsivos
+### Layout & Responsive Components
 
-- [x] Para os gráficos, foi utilizada a bibliteca [**Recharts**](http://recharts.org/en-US) que é opensource.
-- [x] Para efeito de número crescendo eu utilizei o [**React CountUp**](https://www.npmjs.com/package/react-countup).
+- [x] For the graphics, the library was used [**Recharts**](http://recharts.org/en-US) which is opensource.
+- [x] For the effect of growing number I used the [**React CountUp**](https://www.npmjs.com/package/react-countup).
 
 
 <div align="center">
-  <small>Instrutor: Rodrigo Gonçalves Santana - 2020</small>
+  <small>Instructor: Rodrigo Gonçalves Santana - 2020</small>
 </div>
 
 <div align="center">
   <small>Armindo Malafaia Neto - 2021</small>
 </div>
 
-- [x] Link do [**Certificado**](https://www.udemy.com/certificate/UC-3b151adf-5141-437e-b5fb-330ac8db84c0/).
+- [x] [**Certificate**](https://www.udemy.com/certificate/UC-3b151adf-5141-437e-b5fb-330ac8db84c0/) Link.
 
+- [x] [**URL to Try**](https://minha-carteira-365f4.web.app//). (email: **dm7@dm7sistemas.com.br**, password: **12345678**)
+
+- [x] Implemented Capacitor to create Android and IOS Applications
+
+- [x] Implemented a Progressive Web App (PWA)
